@@ -1,4 +1,4 @@
-# Student-Group-Finder-App
+# Student Group Finder App
 Group Finder App: A website that helps students find others having common interests for a wide variety of group activities.
 
 Demo Link: https://www.youtube.com/watch?v=colyzMxy2QU
