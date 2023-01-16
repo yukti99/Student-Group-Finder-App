@@ -45,23 +45,23 @@ Demo Link: https://www.youtube.com/watch?v=colyzMxy2QU
   
   
 ### Steps to Run
-  #### Install virtualenv
-  `py -2 -m pip install virtualenv`
+  #### 1. Install virtualenv
+    `py -2 -m pip install virtualenv`
 
-  #### Create Environment
-  `mkdir <project name>`
-  `cd <project name>`
+  #### 2. Create Environment
+    `mkdir <project name>`
+    `cd <project name>`
 
-  #### Activate Environment
-  `<name of environment>\Scripts\activate`
+  #### 3. Activate Environment
+    `<name of environment>\Scripts\activate`
 
-  #### Install Flask
-  `pip install Flask`
+  #### 4. Install Flask
+    `pip install Flask`
   
-  #### Set FLASK_APP environment variable.
-  `setx FLASK_APP "server.py"`
+  #### 5. Set FLASK_APP environment variable.
+    `setx FLASK_APP "server.py"`
 
-  #### Run the application
-  `flask run`  
-  or  
-  `python server.py `
+  #### 6. Run the application
+    `flask run`  
+    or  
+    `python server.py `
