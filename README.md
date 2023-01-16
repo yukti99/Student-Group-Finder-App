@@ -13,10 +13,11 @@ Demo Link: https://www.youtube.com/watch?v=colyzMxy2QU
 ### Configuration Details
   This app uses firebase as the backend database and needs firebase configuration details to run.
   
-  1. Create a new Firebase project using the following documentation: <br>
+  #### 1. Create a new Firebase project using the following documentation: <br>
+  
     https://firebase.google.com/codelabs/firebase-web#2
   
-  2. Enter the firebase details in the `server.py` file <br>
+  #### 2. Enter your firebase project details in the `server.py` file <br>
   ```
     config = {
       "apiKey": "",
@@ -26,7 +27,7 @@ Demo Link: https://www.youtube.com/watch?v=colyzMxy2QU
     }
   ```
   
-  3. Enter Service Account details in the `server-account.json` file
+  #### 3. Enter the Service Account details in the `server-account.json` file. The firebase.py file can be used for a variety of firebase operations.
   ```
     {
       "type": "",
