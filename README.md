@@ -8,6 +8,33 @@ Demo Link: https://www.youtube.com/watch?v=colyzMxy2QU
 ### Configuration Details
   This app uses firebase as the backend database and needs firebase configuration details to run.
   
+  1. Enter the firebase details in the `server.py` file <br>
+  ```
+    config = {
+      "apiKey": "",
+      "authDomain": "",
+      "databaseURL": "",
+      "storageBucket": ""
+    }
+  ```
+  
+  2. Enter Service Account details in the `server-account.json` file
+  ```
+    {
+      "type": "",
+      "project_id": "",
+      "private_key_id": "",
+      "private_key": "",
+      "client_email": "",
+      "client_id": "",
+      "auth_uri": "",
+      "token_uri": "",
+      "auth_provider_x509_cert_url": "",
+      "client_x509_cert_url": ""
+    }
+  ```
+  
+  
 ### Steps to Run
   #### Install virtualenv
   `py -2 -m pip install virtualenv`
