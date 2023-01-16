@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Shopping App HW1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+    <script type="text/javascript" src="../static/shopping_list.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='shopping_list.css')}}">    
+
+    <script>
+      let items = {{items|tojson}};
+      let email = {{email|tojson}};
+      let name = {{name|tojson}};
+    </script>
+  </head>
+  <body>   
+    <div class="container" id="main">  
+      <div class="row">
+        <div class="col-md-12" id = "header">
+            Shopping List
+        </div>
+      </div>
+      <div class="container-fluid" id="content">
+        <div class="row" id="input-header">
+            <div class="col-s-4 col-md-4 col-4">
+                <input id="item" placeholder="Item"></input>
+            </div>
+            <div class="col-s-4 col-md-4 col-4">
+                <input id="quantity" placeholder="Quantity"></input>
+            </div>
+            <div class="col-s-4 col-md-4 col-4">
+                <button class="btn btn-primary" id="add-btn">Add Item</button>
+            </div>                    
+        </div>        
+        <div class="item_entries">  
+          <div class="row items-entry">
+            <div class="col-s-4 col-md-4 col-4" id = "entry-item">
+
+            </div>
+            <div class="col-s-3 col-md-3 col-3" id = "entry-quantity">
+
+            </div>
+          </div>           
+        </div>
+    </div>   
+    </div>
+  </body>
+</html>
+
+
+
+

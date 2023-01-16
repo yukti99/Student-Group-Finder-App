@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+<script type="text/javascript" src="../static/myGroups.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='myGroups.css')}}"> 
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+    let username = {{username|tojson}};
+    console.log(username);
+    let email = {{email|tojson}};
+    console.log(username);
+    let results = {{results|tojson}};
+    console.log("inside html:",results);
+</script>
+<div class="container-fluid" id = "search-container">  
+    <div class="welcome-content">
+        <span id="bold-text">
+         </span>
+     </p>
+    </div>  
+    <div class="container-fluid" id="recipe-container">  
+        <div class="explore-groups">
+        </div> 
+    </div>  
+    
+   
+</div>
+
+{% endblock %}

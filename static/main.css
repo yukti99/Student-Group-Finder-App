@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+.html,body{
+    background-color: whitesmoke;
+}
+
+
+#home-container{
+    padding-left:60px;
+    padding-right:60px;
+}
+#main-band{ 
+    background-repeat: repeat-y;
+    background-image: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #b56576;
+    height:360px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#end-band{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #b56576;
+    height:50px;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top:50px;
+    margin-bottom:0;
+
+}
+#site-title{
+    /* margin-top:-150px; */
+    text-align: right;
+    padding:50px;
+    font-size: 80px;
+    font-weight:1000;
+    color:white;
+    font-family: 'Playfair Display', serif;
+}
+#desp{
+    font-size:17px;
+    text-align: center;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    margin-top:-40px;
+    font-family:sans-serif;
+    font-weight: lighter;
+    margin-bottom:20px;
+}
+
+#desp2{
+    font-size:13px;
+    margin-top:10px;
+    text-align: center;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    font-family:sans-serif;
+}
+
+#search-btn{
+    background-color: whitesmoke;
+    color:#8f2d56;
+    border-color:#8f2d56 ;
+    
+}
+#search-btn:hover{
+    background-color: #8f2d56;
+    color:white;
+}
+
+.welcome-content{
+    text-align: center;
+    margin:10px;
+    font-size: large;
+    padding:7px;
+    font-style: italic;
+}
+
+#bold-text{
+    font-weight: 700;
+}
+
+.home-options{
+    margin-left:25%;
+    margin-right:25%;
+}
+
+#options{
+    text-align: center;
+}
+
+#explore-group, #create-group{
+    padding-left:6rem;
+    padding-right:6rem;
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color: whitesmoke;
+    font-family: 'Alegreya';
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow:0 0 6px 4px #1b020229;
+    border-radius: 6px;
+    border-color:white;
+    color:gray;
+    margin:1.0rem;
+    margin-top:4rem;
+    overflow: hidden; 
+    z-index: 1000;
+}
+
+#explore-group:hover, #create-group:hover{
+    background-color: whitesmoke;
+    border: 2px solid #8f2d56;
+    color:#8f2d56;
+    cursor: pointer;
+}
+

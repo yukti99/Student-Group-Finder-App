@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<script type="text/javascript" src="../static/viewGroup.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='viewGroup.css')}}"> 
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+   let username = {{username|tojson}};
+    console.log(username);
+    let email = {{email|tojson}};
+    console.log(email);
+    let group = {{group|tojson}};
+    console.log(group);
+</script>
+<div class="container-fluid">  
+    <div class="container-fluid" id="home-container">  
+        <div class="create-groups-div">
+        </div> 
+    </div>  
+</div>
+
+{% endblock %}

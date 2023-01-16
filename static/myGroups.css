@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+.html,body{
+    background-color: whitesmoke;
+}
+.navbar{
+    background-color: gainsboro !important;
+    color:white;
+}
+
+.nav-link{
+    color:#8f2d56 !important;
+}
+
+
+#recipe-container{
+    padding-left:60px;
+    padding-right:60px;
+}
+
+/* RECIPES CSS */
+.explore-groups{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding:5px 5px;    
+}
+.recipe-main{
+	box-shadow:0 0 10px 4px #1b02021a;
+    border-radius: 6px;
+    margin:1.0rem;
+    overflow: hidden; 
+    z-index: 1000;
+}
+.recipe-main:hover{
+    cursor: pointer;
+}
+
+#recipe-header{
+	border-radius: 20px;
+    position:relative;
+    
+}
+#recipe-header .random{
+    position:absolute;
+    top:1rem;
+    background-color: #fff;
+    padding:0.25rem 1rem;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px ;
+}
+
+#recipe-header img{
+	height:200px;
+    width:100%;
+    object-fit: cover;
+}
+
+#recipe-body{
+    font-size: 10px;
+    display:flex;
+    align-items:center;    
+    padding:1rem; 
+}
+#recipe-body h4{
+    margin:0;
+    font-size: 23px;
+    font-family: 'Alegreya';
+    font-weight: 800;
+    padding-left:13px;
+}
+#rating_stars{    
+    margin:0;
+    padding-left:10px;
+    float:right;
+}
+
+
+#recipe-short-info{
+	padding-left:15px;
+	padding-right:15px;
+}
+#recipe-short-info img{
+    padding-right:5px;
+	display:inline-block;
+}
+#i1{
+    width:25%;
+}
+#i2{
+    width:40%;
+}
+#i3{
+    width:20%;
+}
+
+#recipe-short-info p{
+	display:inline-block;
+	font-size:small;
+}
+
+#recipe-intro-id{
+	padding-left:30px;
+	padding-right:30px;
+	font-size:small;
+    
+}
+
+#recipe-courses{
+    font-size:small;
+    padding-left:30px;
+	padding-right:30px;
+    padding-bottom:10px;
+}
+
+.recipe-main:hover{
+    box-shadow: 0px 0px 7px 7px #2632384b;
+}
+
+
+#recipe-time, #recipe-servings, #recipe-author{
+    color: #8f2d56;
+    font-weight: 500;  
+}
+
+#recipe-title{
+    color:#37474f;
+    
+    
+}
+.recipes{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding:5px 5px;    
+}

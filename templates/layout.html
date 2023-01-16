@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Group Finder</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="../static/search_groups.js"></script>
+   
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  </head>
+  <body>    
+
+    <nav class="navbar navbar-expand-lg navbar navbar-light bg-light" id="navtop">
+      <div class="container">
+        <img src="../static/signed_icon.png" alt="User" width="50">
+        <a class="navbar-brand username" href="/" id = "nav-headers"></a>
+        <a class="navbar-brand" href="/home" id = "nav-headers">Home</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/createGroups">Create my own Group</a>
+            <a class="nav-link" href="/myGroups">My Groups</a>
+          </div>
+        </div>
+        <form class="form-inline" id="search-form" action='/search/query' method="get">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-text">
+          <button class="btn btn-outline-primary" type="submit" id="search-btn">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container-fluid" id="main">   
+      <div class="row">
+  
+      </div>
+        {% block content %}
+        {% endblock %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+<script type="text/javascript" src="../static/home.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+    let email = {{email|tojson}};
+    console.log(email);
+    let username = {{username|tojson}};
+    console.log(username);
+</script>
+<div class="container-fluid">  
+    <div class="row" id="main-band">
+        <div class="row" >
+            <div class="col-md-12 col-s-12 col-xs-12 col-12" >
+                <h1 id="site-title"> GR<img src="https://img.icons8.com/ios-filled/50/000000/groups.png" width="70"/>UP Finder! </h1>
+                <p id="desp">
+                    This app can help people find others with common interests for group activities. <br>
+                    Meet people, find support, do tasks together, make friends and explore your interests and hobbies.<br>
+                    Millions of events are happening each day. So don't wait to be a part of something great!
+                </p>  
+            </div>                 
+        </div>
+    </div> 
+    <div class="container-fluid" id="home-container">  
+        <div class="home-options">
+            <div class="row" id="options">
+                <div class="col-md-6 col-sm-12 col-12">
+                    <button type="button" onclick="goToExploreGroups()" class="btn btn-primary btn-square-md" id="explore-group">EXPLORE</button>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12">
+                    <button type="button" onclick="goToCreateGroups()" class="btn btn-primary btn-square-md"id="create-group">CREATE</button>
+                </div>
+            </div>
+        </div> 
+    </div>  
+    <!-- <div class="row" id="end-band">
+        <div class="row" >
+            <div class="col-md-12 col-s-12 col-xs-12 col-12" >
+                <p id="desp2">Contact us at yk2950@columbia.edu</p>  
+            </div>                 
+        </div>
+    </div>  -->
+   
+</div>
+
+{% endblock %}

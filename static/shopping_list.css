@@ -1,0 +1,46 @@
+.html,body{
+    background-color: whitesmoke;
+}
+
+#header{
+    background-color: rgb(225, 233, 236);
+    text-align: center;
+    padding:50px;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#main{
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+}
+#content{
+    margin-top:20px;
+    width:90%;
+    padding-left:150px;
+
+}
+#input-header{    
+    font-size: 20px; 
+    margin-bottom: 50px;
+}
+
+#item,#quantity{
+    margin:auto;
+    width:100%;
+}
+
+.items-entry{
+    margin-bottom:15px;
+    text-align: left;
+    font-size: 17px;
+}
+
+#remove-button{
+    margin-top:3px;
+}
+
+#update-row{
+    margin-top:40px;
+}

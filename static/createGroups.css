@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+.html,body{
+  background-color: #b56576!important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#group-form {
+  text-align: center;
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  padding:20px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#input-fields {
+  padding-top:20px;
+  text-align: center;
+  margin-left:30%;
+  margin-right:25%;
+  width:100%;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"], input[type="number"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+#create-group-btn{
+  background-color: whitesmoke;
+  color:#8f2d56;
+  margin-top:30px;
+  margin-bottom:30px;
+  padding-left:20px;
+  padding-right:20px;
+  border-color:#8f2d56 ;
+  
+}
+#create-group-btn:hover{
+  background-color: #8f2d56;
+  color:white;
+}
+

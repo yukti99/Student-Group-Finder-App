@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+<script type="text/javascript" src="../static/createGroups.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='createGroups.css')}}"> 
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+   let username = {{username|tojson}};
+    console.log(username);
+    let email = {{email|tojson}};
+    console.log(email);
+</script>
+<div class="container-fluid">  
+    <div class="container-fluid" id="home-container">  
+        <div class="create-groups-div">
+            <div id="group-form">
+                <h1>Group Details</h1>
+                <div id="input-fields">
+                <input type="date" name="event-date" placeholder="Date" id="event-date" />
+                 <input type="time" name="event-time" placeholder="Time" id="event-time"/>
+                  <input type="text" name="event-name" placeholder="Event Name"  id="event-name"/>
+                  <input type="text" name="description" placeholder="Short Description" id="description" />
+                  <input type="number" name="max-people" placeholder="Max People" id="max-people"/>
+                  <input type="text" name="location" placeholder="Location" id="location"/>
+                  <input type="text" name="duration" placeholder="Event Duration" id="event-duration"/>
+                </div>
+                <button class="btn btn-outline-primary" type="submit" id="create-group-btn">Create</button>
+            </div>
+            
+        </div> 
+    </div>  
+</div>
+
+{% endblock %}

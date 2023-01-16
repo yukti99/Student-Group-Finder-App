@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+<script type="text/javascript" src="../static/exploreGroups.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='exploreGroups.css')}}"> 
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+    let username = {{username|tojson}};
+    console.log(username);
+    let email = {{email|tojson}};
+    console.log(username);
+    let groups = {{groups|tojson}};
+    console.log(groups);
+</script>
+<div class="container-fluid">  
+    <div class="row" id="main-band">
+        <div class="row" >
+            <div class="col-md-12 col-s-12 col-xs-12 col-12" >
+                <h1 id="site-title"> GR<img src="https://img.icons8.com/ios-filled/50/000000/groups.png" width="70"/>UP Finder! </h1>
+                <p id="desp">
+                    CHOOSE FROM THOUSANDS OF AMAZING GROUPS...
+                </p>  
+            </div>                 
+        </div>
+    </div>  
+    <div class="container-fluid" id="recipe-container">  
+        <div class="explore-groups">
+        </div> 
+    </div>  
+    <!-- <div class="row" id="end-band">
+        <div class="row" >
+            <div class="col-md-12 col-s-12 col-xs-12 col-12" >
+                <p id="desp2">Contact us at yk2950@columbia.edu </p>  
+            </div>                 
+        </div>
+    </div> 
+    -->
+</div>
+
+{% endblock %}
