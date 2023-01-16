@@ -3,7 +3,12 @@ Group Finder App: A website that helps students find others having common intere
 
 Demo Link: https://www.youtube.com/watch?v=colyzMxy2QU
 
-![](img/g1.jpg)
+| | |
+|:-------------------------:|:-------------------------:|
+|User Login/Registration <img src="img/g1.jpg" /> |  Home Page for Exploring/Creating Groups <img src="img/g2.jpg" /> |
+|Find from all groups  <img src="img/g3.jpg" /> |  Join a group if limit permits <img src="img/g4.jpg" /> |
+|Create your own group <img src="img/g5.jpg" /> | Easy Access to Previously joined groups/activities <img src="img/g6.jpg" /> |
+|Easy Search by keywords <img src="img/g7.jpg" /> | Exit group activity as per convenience <img src="img/g8.jpg" /> |
 
 ### Configuration Details
   This app uses firebase as the backend database and needs firebase configuration details to run.
